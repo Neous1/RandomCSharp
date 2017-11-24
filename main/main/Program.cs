@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -54,7 +55,20 @@ namespace main
 
             //some comments here to test
 
+            int x = 1;
+            int y = 2;
+            var result = AddNumbers(y, x);
+        }
+
+
+        public static int AddNumbers(int number2, int number1)
+        {
+            var result = number1 + number2;
+
+            Console.WriteLine(result);
+            return 0;
         }
 
     }
+
 }
