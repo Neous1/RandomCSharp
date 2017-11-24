@@ -17,6 +17,23 @@ namespace main
                 number += 1;
             }
             Console.ReadLine();
+            do
+            {
+                Console.WriteLine(number);
+                number += 1;
+
+            } while (number < 10);
+
+
+            int num = 5;
+            for (int i = 0; i < num; i++)
+            {
+                Console.WriteLine(i);
+
+                Console.ReadLine();
+            }
         }
+
+
     }
 }
