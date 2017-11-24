@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -55,11 +56,23 @@ namespace main
 
             //some comments here to test
 
-            int x = 1;
-            int y = 2;
+            var x = 1;
+            var y = 2;
             var result = AddNumbers(y, x);
+
+            var adding = AddFive(num);
+            Console.WriteLine("num is "+ num);
+            
         }
 
+        // end of main ******************************************
+
+        public static int AddFive(int number)
+        {
+             number += 5;
+            Console.WriteLine("added five to num: "+ number);
+            return 0;
+        }
 
         public static int AddNumbers(int number2, int number1)
         {
