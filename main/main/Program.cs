@@ -33,9 +33,9 @@ namespace main
             for (int i = 0; i < num; i++)
             {
                 Console.WriteLine(i);
-
-                Console.ReadLine();
+                               
             }
+            Console.ReadLine();
 
             // Foreach loop ***********************************
             var people = new List<string>();
@@ -49,8 +49,10 @@ namespace main
             {
                 Console.WriteLine(item);
             }
-        }
 
+            Console.ReadLine();
+
+        }
 
     }
 }
