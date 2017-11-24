@@ -36,6 +36,19 @@ namespace main
 
                 Console.ReadLine();
             }
+
+            // Foreach loop ***********************************
+            var people = new List<string>();
+            people.Add("yvon doe");
+
+            string[] folks = new string[3] { "john doe", "jane doe", "baby doe" };
+
+            people.AddRange(folks);
+
+            foreach (var item in people)
+            {
+                Console.WriteLine(item);
+            }
         }
 
 
