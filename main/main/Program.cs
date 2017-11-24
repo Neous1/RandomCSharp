@@ -60,17 +60,17 @@ namespace main
             var y = 2;
             var result = AddNumbers(y, x);
 
-            var adding = AddFive(num);
+            var adding = AddFive(ref num);
             Console.WriteLine("num is "+ num);
             
         }
 
         // end of main ******************************************
 
-        public static int AddFive(int number)
+        public static int AddFive(ref int number)
         {
              number += 5;
-            Console.WriteLine("added five to num: "+ number);
+            //Console.WriteLine("added five to num: "+ number);
             return 0;
         }
 
