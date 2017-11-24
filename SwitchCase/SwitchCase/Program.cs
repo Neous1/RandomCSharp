@@ -24,6 +24,10 @@ namespace SwitchCase
                 default:
                     Console.WriteLine("I'm sorry, I don't understand that!");
                     break;
+
+
+                    // more to come
+
             }
         }
     }
