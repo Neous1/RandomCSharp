@@ -10,6 +10,7 @@ namespace main
     {
         static void Main(string[] args)
         {
+            // while loop ***************************
             int number = 0;
             while(number < 5)
             {
@@ -17,6 +18,8 @@ namespace main
                 number += 1;
             }
             Console.ReadLine();
+
+            //do While loop ******************************
             do
             {
                 Console.WriteLine(number);
@@ -25,6 +28,7 @@ namespace main
             } while (number < 10);
 
 
+            // For Loop ************************************
             int num = 5;
             for (int i = 0; i < num; i++)
             {
