@@ -12,6 +12,10 @@ namespace main
     {
         static void Main(string[] args)
         {
+            GreetPersons(0);
+            GreetPersons(25, "John", "jane", "Tarzan");
+            Console.ReadKey();
+
             // while loop ***************************
             int number = 0;
             while(number < 5)
@@ -82,6 +86,15 @@ namespace main
             return 0;
         }
 
+        //Params modifier ********************************
+
+        static void GreetPersons(int unusedParameter, params string[] names)
+        {
+            foreach (var name in names)
+            {
+                Console.WriteLine("Hello, " + name);
+            }
+        }
     }
 
 }
