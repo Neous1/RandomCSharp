@@ -10,6 +10,11 @@ namespace Classes
     {
         static void Main(string[] args)
         {
+            var car = new Car("Red");
+            Console.WriteLine(car.Describe());
+
+            car = new Car("Green");
+            Console.WriteLine(car.Describe());
         }
     }
 }
