@@ -18,9 +18,19 @@ namespace Arrays
             foreach (string name in names)
             {
                 Console.WriteLine(name);
+                
+            }
+            Console.WriteLine();
+            int[] numbers = { 4, 3, 8, 0, 5 };
+
+            Array.Sort(numbers);
+
+            foreach (var i in numbers)
+            {
+                Console.WriteLine(i);
             }
 
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }
