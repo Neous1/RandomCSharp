@@ -10,6 +10,7 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
+            //array is a class, supriiiise.
             string[] names = new string[2];
             names [0] = "John Doe";
             names[1] = "Jane Doe";
