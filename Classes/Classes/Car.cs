@@ -3,21 +3,13 @@
     class Car
     {
         //declare a variable for car
-        private string color;
 
         public Car (string color)
         {
-            this.color = color;
+            this.Color = color;
         }
 
         //declare a property Color to access variable car
-        public string Color
-        {
-            get { return color; }
-            set { color = value; }
-        }
-
-
-
+        public string Color { get; set; }
     }
 }
