@@ -8,13 +8,13 @@ namespace classes
 {
     class Box
     {
-        public double length;
-        public double breadth;
-        public double height;
+        public double Length;
+        public double Breadth;
+        public double Height;
 
-        public double volume()
+        public double Volume()
         {
-            return (this.length * this.height * this.breadth);
+            return (this.Length * this.Height * this.Breadth);
         }
     }
     class Program
@@ -23,21 +23,21 @@ namespace classes
         {
             var box1 = new Box
             {
-                height = 20,
-                breadth = 10,
-                length = 45
+                Height = 20,
+                Breadth = 10,
+                Length = 45
             };
 
-            Console.WriteLine("Volume of box1 is {0}", box1.volume());
+            Console.WriteLine("Volume of box1 is {0}", box1.Volume());
 
             var box2 = new Box
             {
-                height = 10,
-                breadth = 13,
-                length = 12
+                Height = 10,
+                Breadth = 13,
+                Length = 12
             };
 
-            Console.WriteLine("Volume of box2 is {0}", box2.volume());
+            Console.WriteLine("Volume of box2 is {0}", box2.Volume());
         }
     }
 }
