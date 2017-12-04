@@ -6,36 +6,18 @@ using System.Threading.Tasks;
 
 namespace DynamicPolymorphismVirtualFunc
 {
-    class Shape
+    class Triangle : Shape
     {
-        protected int width, height;
-
-        public Shape(int a = 0, int b = 0)
-        {
-            width = a;
-            height = b;
-        }
-
-        public virtual int Area()
-        {
-            Console.WriteLine("Parent class area: ");
-            return 0;
-        }
-    }
-
-    class Rectangle: Shape
-    {
-        public Rectangle( int a = 0, int b = 0): base(a, b)
-        {
-            
-        }
+        public Triangle(int a = 0, int b= 0): base(a, b) { }
 
         public override int Area()
         {
-            Console.WriteLine("Rectangle class area:");
-            return (width * height);
+            Console.WriteLine("Triangle class area: ");
+            return (width * height / 2);
         }
     }
+
+
     class Program
     {
         static void Main(string[] args)
