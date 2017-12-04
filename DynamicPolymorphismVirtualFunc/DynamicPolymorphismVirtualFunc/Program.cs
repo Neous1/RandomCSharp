@@ -15,6 +15,12 @@ namespace DynamicPolymorphismVirtualFunc
             width = a;
             height = b;
         }
+
+        public virtual int Area()
+        {
+            Console.WriteLine("Parent class area: ");
+            return 0;
+        }
     }
     class Program
     {
