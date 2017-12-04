@@ -10,31 +10,31 @@ namespace DynamicPolymorphism
     {
         abstract class Shape
         {
-            public abstract int area();
+            public abstract int Area();
         }
 
         class Rectangle: Shape
        {
-            private readonly int length;
-           private readonly int width;
+            private readonly int _length;
+           private readonly int _width;
 
            public Rectangle(int a = 0, int b = 0)
            {
-                length = a;
-               width = b;
+                _length = a;
+               _width = b;
            }
 
-           public override int area()
+           public override int Area()
            {
                 Console.WriteLine("Rectangle class area:");
-               return (width * length);
+               return (_width * _length);
            }
 
        }
         static void Main(string[] args)
         {
             var rect = new Rectangle(10, 7);
-            double a = rect.area();
+            double a = rect.Area();
             Console.WriteLine("Area: {0}", a);
             Console.WriteLine();
         }
