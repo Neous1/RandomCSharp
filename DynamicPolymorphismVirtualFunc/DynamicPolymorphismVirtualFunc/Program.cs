@@ -21,8 +21,7 @@ namespace DynamicPolymorphismVirtualFunc
     {
         public void CallArea(Shape sh)
         {
-            int a;
-            a = sh.Area();
+            var a = sh.Area();
             Console.WriteLine("Area: {0}", a);
         }
     }
