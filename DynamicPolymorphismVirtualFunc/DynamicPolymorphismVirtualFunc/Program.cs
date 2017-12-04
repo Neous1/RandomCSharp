@@ -29,6 +29,12 @@ namespace DynamicPolymorphismVirtualFunc
         {
             
         }
+
+        public override int Area()
+        {
+            Console.WriteLine("Rectangle class area:");
+            return (width * height);
+        }
     }
     class Program
     {
