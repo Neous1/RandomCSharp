@@ -17,7 +17,15 @@ namespace DynamicPolymorphismVirtualFunc
         }
     }
 
-
+    class Caller
+    {
+        public void CallArea(Shape sh)
+        {
+            int a;
+            a = sh.Area();
+            Console.WriteLine("Area: {0}", a);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
