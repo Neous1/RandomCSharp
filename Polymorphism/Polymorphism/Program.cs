@@ -12,6 +12,10 @@ namespace Polymorphism
         {
             Console.WriteLine("printing int : {0}", i);
         }
+        void print(double f)
+        {
+            Console.WriteLine("Printing float: {0}", f);
+        }
     }
     class Program
     {
