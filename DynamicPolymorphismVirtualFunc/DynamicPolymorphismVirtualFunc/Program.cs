@@ -10,9 +10,10 @@ namespace DynamicPolymorphismVirtualFunc
     {
         protected int width, height;
 
-        public Shape()
+        public Shape(int a = 0, int b = 0)
         {
-            
+            width = a;
+            height = b;
         }
     }
     class Program
