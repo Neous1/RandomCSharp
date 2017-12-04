@@ -1,34 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DynamicPolymorphismVirtualFunc
 {
-    class Triangle : Shape
-    {
-        public Triangle(int a = 0, int b= 0): base(a, b) { }
-
-        public override int Area()
-        {
-            Console.WriteLine("Triangle class area: ");
-            return (width * height / 2);
-        }
-    }
-
-    class Caller
-    {
-        public void CallArea(Shape sh)
-        {
-            var a = sh.Area();
-            Console.WriteLine("Area: {0}", a);
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
+            var c = new Caller();
+            var r = new Rectangle(10, 7);
+            var t = new Triangle(10, 5);
+            c.CallArea(r);
+            c.CallArea(t);
+            
         }
     }
 }
