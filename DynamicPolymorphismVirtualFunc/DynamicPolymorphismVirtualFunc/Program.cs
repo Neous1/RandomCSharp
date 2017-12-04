@@ -22,6 +22,14 @@ namespace DynamicPolymorphismVirtualFunc
             return 0;
         }
     }
+
+    class Rectangle: Shape
+    {
+        public Rectangle( int a = 0, int b = 0): base(a, b)
+        {
+            
+        }
+    }
     class Program
     {
         static void Main(string[] args)
