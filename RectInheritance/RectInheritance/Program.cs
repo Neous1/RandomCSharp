@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classes
+namespace RectInheritance
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var car = new Car("Red");
-            Console.WriteLine(car.Describe());
-
-            car = new Car("Green");
-            Console.WriteLine(car.Describe());
+            var t = new Tabletop(4.5, 7.5);
+            t.Display();
+            Console.ReadLine();
         }
     }
 }

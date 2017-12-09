@@ -10,36 +10,37 @@ namespace Polymorphism
     {
         public void Print(int i)
         {
-            Console.WriteLine("Printing int: {0}", 
-                i);
+            Console.WriteLine("printing int : {0}", i);
         }
 
         public void Print(double f)
         {
-            Console.WriteLine("Printing int: {0}",
-                f);
+            Console.WriteLine("Printing float: {0}", f);
         }
 
         public void Print(string s)
         {
-            Console.WriteLine("Printing int: {0}",
-                s);
+            Console.WriteLine("Printing string: {0}", s);
         }
+
+
+
     }
     class Program
     {
         static void Main(string[] args)
         {
             var p = new Printdata();
+            
+            //call print to print integer
             p.Print(5);
 
-            //print float
-            p.Print(500.263);
+            //call print to print float 
+            p.Print(500.27);
 
-            //print string
-            p.Print("Hello c++");
+            //call print to print string
+            p.Print("Hellow SiliconRhode");
 
-            Console.ReadKey();
 
         }
     }
