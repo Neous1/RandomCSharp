@@ -12,17 +12,26 @@ namespace FirstDuplicate
         {
             int[] a = {2, 3, 1, 2, 5};
 
-            for (var i = 0; i < a.Length; i++)
+            foreach (var item in a)
             {
-                Console.WriteLine();
-                Console.WriteLine("a[i] is " + a[i]);
+                Console.WriteLine(item);
+            }
+
+
+
+
+      /*      for (var i = 0; i < a.Length; i++)
+            {
+//                Console.WriteLine();
+//                Console.WriteLine("a[i] is " + a[i]);
                 for (var j = 1; j < a.Length;)
                 {
-                      Console.WriteLine("a[j] is " + a[j]);
+                      //Console.WriteLine("a[j] is " + a[j]);
                     if (a[i] == a[j])
                     {
+                        Console.WriteLine(i, j);
                         Console.WriteLine();
-                        Console.WriteLine("a[i] is {0} a[j] is {1} index is {2}", a[i], a[j], i);
+                        //Console.WriteLine("a[i] is {0} a[j] is {1} index is {2}", a[i], a[j], i);
                        
                         break;
                     }
@@ -33,7 +42,7 @@ namespace FirstDuplicate
                     }
                     break;
                 }
-            }
+            }*/
 
             Console.ReadLine();
         }
