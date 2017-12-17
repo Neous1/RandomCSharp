@@ -10,39 +10,25 @@ namespace FirstDuplicate
     {
         static void Main(string[] args)
         {
-            int[] a = {2, 3, 1, 2, 5};
+            int[] a = {2, 3, 1, 2, 5,3}; 
 
-            foreach (var item in a)
+            for (int i = 0; i < a.Length; i++)
             {
-                Console.WriteLine(item);
+                for (int j = 1; j < a.Length; j++)
+                {
+                    if (a[i] == a[j] && (i != j))
+                    {
+                        //Console.WriteLine("the values for i is {0} and js is {1}", a[i], a[j]);
+                        //Console.WriteLine("the index for i is {0} and js is {1}", i , j);
+                        Console.WriteLine(a[j]);
+                        
+                    }
+                    
+
+                    
+                }
             }
 
-
-
-
-      /*      for (var i = 0; i < a.Length; i++)
-            {
-//                Console.WriteLine();
-//                Console.WriteLine("a[i] is " + a[i]);
-                for (var j = 1; j < a.Length;)
-                {
-                      //Console.WriteLine("a[j] is " + a[j]);
-                    if (a[i] == a[j])
-                    {
-                        Console.WriteLine(i, j);
-                        Console.WriteLine();
-                        //Console.WriteLine("a[i] is {0} a[j] is {1} index is {2}", a[i], a[j], i);
-                       
-                        break;
-                    }
-                    else
-                    {
-                        
-                        j++;
-                    }
-                    break;
-                }
-            }*/
 
             Console.ReadLine();
         }
