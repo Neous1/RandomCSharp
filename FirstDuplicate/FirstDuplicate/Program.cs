@@ -16,22 +16,23 @@ namespace FirstDuplicate
         
             int skip = 0;
 
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < a.Length-1;)
             {
-                if (a[i] < 0 )
+
+
+//                target = a[i];
+//                a[target] = -a[target];
+                //target = a[i];
+                if (a[i] == a[i + 1])
                 {
-                    Console.WriteLine("negative");
+                    Console.WriteLine(a[i]);
                 }
                 else
-                {
-                    target = a[i];
-                    a[target] = -a[target];
-
-                }
+                    i++;
 
             }
             
-                Console.WriteLine(skip -1);
+               // Console.WriteLine(skip -1);
         }
 
             
