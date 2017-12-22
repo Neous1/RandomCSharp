@@ -10,36 +10,36 @@ namespace FirstDuplicate
     {
         static void Main(string[] args)
         {
-            int[] a = {2, 3, 1, 2, 5,3}; 
+            int[] a = {2, 3, 1, 2, 5,3};
 
-               var dupList = new List<int>();
+            int target = 0;
+        
+            int skip = 0;
 
-            foreach (int t in a)
+            for (int i = 0; i < a.Length; i++)
             {
-                for (int j = 1; j < a.Length; j++)
+                if (a[i] < 0 )
                 {
-                    if (a[i] == a[j] && (i != j))
-                    {
-                        //Console.WriteLine("the values for i is {0} and js is {1}", a[i], a[j]);
-                        //Console.WriteLine("the index for i is {0} and js is {1}", i , j);
-                        Console.WriteLine(a[j]);
-                        
-                dupList.Add(t);
-                Console.WriteLine(t);
-                    }
-                    
+                    Console.WriteLine("negative");
+                }
+                else
+                {
+                    target = a[i];
+                    a[target] = -a[target];
 
-                    
-                    
-                    //take 2
-                    
                 }
 
-
-
-            Console.ReadLine();
+            }
+            
+                Console.WriteLine(skip -1);
         }
 
-
+            
     }
+
+            
 }
+
+
+    
+
