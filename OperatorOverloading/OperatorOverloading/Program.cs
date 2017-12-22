@@ -74,7 +74,14 @@ namespace OperatorOverloading
             volume = Box2.getVolume();
             Console.WriteLine("Volume of box1: {0}", volume);
 
-            
+            //Add two object as follows;
+            Box3 = Box1 + Box2;
+
+            //volume of box 3
+            volume = Box3.getVolume();
+            Console.WriteLine("Volume of box1: {0}", volume);
+
+            Console.ReadKey();
 
         }
     }
