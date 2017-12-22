@@ -55,6 +55,16 @@ namespace OperatorOverloading
 
             double volume = 0.0;
 
+            //box1 Specs
+            Box1.setLength(6.0);
+            Box1.setBreadth(7.0);
+            Box1.setHeight(5.0);
+
+            //box2 Specs
+            Box2.setLength(12.0);
+            Box2.setBreadth(13.0);
+            Box2.setHeight(10.0);
+
 
         }
     }
