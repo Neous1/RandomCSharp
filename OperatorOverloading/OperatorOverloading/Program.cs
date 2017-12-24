@@ -34,7 +34,7 @@ namespace OperatorOverloading
         }
 
         //OVerload + operator to add two Box objects
-        public static Box operator+ (Box b, Box c)
+        public static Box operator +(Box b, Box c)
         {
             Box box = new Box();
             box.length = b.length + c.length;
@@ -42,7 +42,28 @@ namespace OperatorOverloading
             box.height = b.height + c.height;
             return box;
         }
-        
+
+        // overload == 
+        public static bool operator ==(Box lhs, Box rhs)
+        {
+            bool status = lhs.length == rhs.length && lhs.height == rhs.height && lhs.breadth == rhs.height;
+            return status;
+        }
+
+        public static bool operator !=(Box lhs, Box rhs)
+        {
+            bool status = false;
+            if (lhs.length != rhs.length || lhs.height != rhs.height || lhs.breadth != rhs.breadth ||)
+            {
+                status = true;
+            }
+            return status;
+        }
+
+
+
+
+
 
         
     }
