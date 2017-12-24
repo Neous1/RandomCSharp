@@ -16,6 +16,25 @@ namespace OperatorOverloading
         {
             return length * breadth * height;
         }
+
+        public void setLength(double len)
+        {
+            length = len;
+        }
+
+        public void setBreadth(double bre)
+        {
+            breadth = bre;
+        }
+
+        public void setHeight(double hei)
+        {
+            height = hei;
+        }
+
+        //OVerload + operator to add two Box objects
+        
+
         
     }
     class Program
