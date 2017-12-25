@@ -82,7 +82,10 @@ public static bool operator <= (Box lhs, Box rhs)
 
 
 
-
+        public override string ToString()
+        {
+            return String.Format("{0}, {1}, {2}", length, breadth, height);
+        }
 
 
         
@@ -121,6 +124,10 @@ public static bool operator <= (Box lhs, Box rhs)
             //volume of box 3
             volume = Box3.getVolume();
             Console.WriteLine("Volume of box1: {0}", volume);
+
+            //Comparing trhe boxes
+
+
 
             Console.ReadKey();
 
