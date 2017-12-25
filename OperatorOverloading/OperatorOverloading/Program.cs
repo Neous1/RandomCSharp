@@ -62,6 +62,12 @@ namespace OperatorOverloading
             return status;
         }
 
+        public static bool operator > (Box lhs, Box rhs)
+        {
+            bool status = lhs.length > rhs.length || lhs.height > rhs.height || lhs.breadth > rhs.breadth;
+            return status;
+        }
+
 
 
 
