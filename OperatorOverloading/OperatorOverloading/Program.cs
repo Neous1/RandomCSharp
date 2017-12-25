@@ -52,11 +52,7 @@ namespace OperatorOverloading
 
         public static bool operator !=(Box lhs, Box rhs)
         {
-            bool status = false;
-            if (lhs.length != rhs.length || lhs.height != rhs.height || lhs.breadth != rhs.breadth ||)
-            {
-                status = true;
-            }
+            bool status = lhs.length != rhs.length || lhs.height != rhs.height || lhs.breadth != rhs.breadth;
             return status;
         }
 
