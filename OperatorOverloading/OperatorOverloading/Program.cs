@@ -127,10 +127,45 @@ public static bool operator <= (Box lhs, Box rhs)
 
             //Comparing trhe boxes
 
+            if (Box1 > Box2)
+                Console.WriteLine("Box1 is greater than Box2");
+            else
+                Console.WriteLine("Box1 is not greater than Box2");
 
 
-            Console.ReadKey();
+            if (Box1 < Box2)
+                Console.WriteLine("Box1 is less than Box2");
+            else
+                Console.WriteLine("Box1 is not less than Box2");
 
+
+            if (Box1 >= Box2)
+                Console.WriteLine("Box1 is greater or equal to  Box2");
+            else
+                Console.WriteLine("Box1 is not less than Box2");
+
+
+            if (Box1 < Box2)
+                Console.WriteLine("Box1 is less than Box2");
+            else
+                Console.WriteLine("Box1 is not less than Box2");
+
+
+            if (Box1 < Box2)
+                Console.WriteLine("Box1 is less than Box2");
+            else
+                Console.WriteLine("Box1 is not less than Box2");
+
+
+            if (Box1 < Box2)
+                Console.WriteLine("Box1 is less than Box2");
+            else
+                Console.WriteLine("Box1 is not less than Box2");
+
+
+
+
+                Console.ReadKey();
         }
     }
 }
