@@ -38,7 +38,12 @@ namespace Csharp_Dictionary
                 Salary = 3500
             };
 
-
+            //create a customer dictionary of key int and value customer
+            Dictionary<int, Customer> dictionaryCustomers = new Dictionary<int, Customer>();
+            //add items to dictonary
+            dictionaryCustomers.Add(customer1.ID, customer1);
+            dictionaryCustomers.Add(customer2.ID, customer3);
+            dictionaryCustomers.Add(customer3.ID, customer3);
 
         }
     }
