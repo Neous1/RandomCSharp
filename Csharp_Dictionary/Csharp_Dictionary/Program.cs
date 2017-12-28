@@ -45,6 +45,10 @@ namespace Csharp_Dictionary
             dictionaryCustomers.Add(customer2.ID, customer3);
             dictionaryCustomers.Add(customer3.ID, customer3);
 
+            //retrive data from dictionary
+            var customer119 =  dictionaryCustomers[119];
+            Console.WriteLine("ID = {0}, Name = {1}, Salary ={2}",customer119.ID, customer119.Name, customer119.Salary);
+
         }
     }
 }
