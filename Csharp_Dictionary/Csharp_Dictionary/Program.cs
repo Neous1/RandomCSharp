@@ -47,8 +47,17 @@ namespace Csharp_Dictionary
 
             //retrive data from dictionary
             var customer119 =  dictionaryCustomers[119];
-            Console.WriteLine("ID = {0}, Name = {1}, Salary ={2}",customer119.ID, customer119.Name, customer119.Salary);
+            //Console.WriteLine("ID = {0}, Name = {1}, Salary ={2}",customer119.ID, customer119.Name, customer119.Salary);
 
+
+            foreach(KeyValuePair<int, Customer> customerKeyValuePair in dictionaryCustomers)
+            {
+                Console.WriteLine("Key = {0}", customerKeyValuePair.Key);
+                var cust = customerKeyValuePair.Value;
+                Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}" , cust.ID, cust.Name, cust.Salary);
+                Console.WriteLine("----------------------------------------------------------------");
+
+            }
         }
     }
 }
