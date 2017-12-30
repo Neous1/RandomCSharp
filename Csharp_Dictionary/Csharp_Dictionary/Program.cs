@@ -50,13 +50,15 @@ namespace Csharp_Dictionary
             //Console.WriteLine("ID = {0}, Name = {1}, Salary ={2}",customer119.ID, customer119.Name, customer119.Salary);
 
 
-            foreach(var customerKeyValuePair in dictionaryCustomers)
+            foreach(var key in dictionaryCustomers.Keys)
             {
-                Console.WriteLine("Key = {0}", customerKeyValuePair.Key);
+
+                Console.WriteLine(key);
+                /*Console.WriteLine("Key = {0}", customerKeyValuePair.Key);
                 var cust = customerKeyValuePair.Value;
                 Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}" , cust.ID, cust.Name, cust.Salary);
                 Console.WriteLine("----------------------------------------------------------------");
-
+                */
             }
         }
     }
