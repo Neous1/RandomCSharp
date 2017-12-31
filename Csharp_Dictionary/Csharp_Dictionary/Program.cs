@@ -44,6 +44,10 @@ namespace Csharp_Dictionary
             dictionaryCustomers.Add(customer1.ID, customer1);
             dictionaryCustomers.Add(customer2.ID, customer3);
             dictionaryCustomers.Add(customer3.ID, customer3);
+            if (!dictionaryCustomers.ContainsKey(customer1.ID))
+            {
+                dictionaryCustomers.Add(customer1.ID, customer3);
+            }
 
             //retrive data from dictionary
             var customer119 =  dictionaryCustomers[119];
