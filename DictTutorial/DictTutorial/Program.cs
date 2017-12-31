@@ -18,6 +18,14 @@ namespace DictTutorial
                     {3, "Three"}
 
                 };
+            dict.Add(new KeyValuePair<int, string>(4, "Four"));
+            dict.Add(new KeyValuePair<int, string>(5, "Five"));
+            dict.Add(6, "Six");
+
+            foreach (KeyValuePair<int, string> item in dict)
+            {
+                Console.WriteLine("key: {0}, Value: {1}", item.Key, item.Value);
+            }
         }
     }
 }
