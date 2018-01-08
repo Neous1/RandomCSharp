@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ArraytoFunctions
 {
     class MyArray {
-        double getAverage(int[] arr, int size)
+        public double getAverage(int[] arr, int size)
         {
             double avg;
             int sum = 0;
@@ -17,6 +17,8 @@ namespace ArraytoFunctions
             {
                 sum += arr[i];
             }
+            avg = (double) sum / size;
+            return avg;
         }
     }
     
@@ -24,7 +26,17 @@ namespace ArraytoFunctions
     {
         static void Main(string[] args)
         {
-            
+            MyArray app = new MyArray();
+            /* an int array with 5 elements */
+            int[] balance = new int[] {1000, 2, 3, 17, 50};
+            double avg;
+
+            /* apass pointer to the array as an argument */
+            avg = app.getAverage(balance, 5);
+
+            /*output the returned value */
+            Console.WriteLine("Average value is : {0}", avg);
+            Console.ReadKey();
         }
     }
 }
