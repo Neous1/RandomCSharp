@@ -17,6 +17,10 @@ namespace Dictionary_Demo
     {
         static void Main(string[] args)
         {
+            var cust1 = new Customer()
+            {
+                ID = 101
+            };
         }
     }
 }
