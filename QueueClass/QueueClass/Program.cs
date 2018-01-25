@@ -44,6 +44,16 @@ namespace QueueClass
             numbers.Enqueue("three");
             numbers.Enqueue("four");
             numbers.Enqueue("five");
+
+            //A queue can be enumaretad without disturbing its content
+            foreach (string number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
+            Console.WriteLine("\nDequeing '{0}'", numbers.Dequeue());
+            Console.WriteLine("Peek at next item to dequeue: {0}", numbers.Peek());
+            Console.WriteLine("Dequeuing '{0}'", numbers.Dequeue());
         }
     }
 }
