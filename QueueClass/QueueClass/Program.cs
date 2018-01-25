@@ -54,6 +54,24 @@ namespace QueueClass
             Console.WriteLine("\nDequeing '{0}'", numbers.Dequeue());
             Console.WriteLine("Peek at next item to dequeue: {0}", numbers.Peek());
             Console.WriteLine("Dequeuing '{0}'", numbers.Dequeue());
+
+            //Create a copy of hte queue, using the ToArray method and 
+            //Consructory that accepts and IEnumerable<T>.
+
+            Queue<string> queueCopy = new Queue<string>(numbers.ToArray());
+            Console.WriteLine("\nContents of the first copy");
+            foreach (string number in queueCopy)
+            {
+                Console.WriteLine(number);
+            }
+            //Create an arry twice the size of hte queue and copy
+            //hte elements of hte queeue, starting at the middle of hte 
+            //array.
+
+            string[] array2 = new string[numbers.Count * 2];
+            numbers.CopyTo(array2, numbers.Count);
+
+
         }
     }
 }
