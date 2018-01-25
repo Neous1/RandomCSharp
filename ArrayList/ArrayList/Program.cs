@@ -20,6 +20,10 @@ namespace ArrayList
             al.Add(12);
             al.Add(23);
             al.Add(9);
+
+
+            Console.WriteLine("Capacity: {0}", al.Capacity);
+            Console.WriteLine("Count: {0}", al.Count);
         }
     }
 }
