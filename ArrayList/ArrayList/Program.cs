@@ -21,9 +21,24 @@ namespace ArrayList
             al.Add(23);
             al.Add(9);
 
-
             Console.WriteLine("Capacity: {0}", al.Capacity);
             Console.WriteLine("Count: {0}", al.Count);
+
+            Console.WriteLine("Content: ");
+            foreach (int i in al)
+            {
+                Console.WriteLine(i + " ");
+            }
+
+            Console.WriteLine("Sorted Content: ");
+            al.Sort();
+            foreach (int i in al)
+            {
+                Console.WriteLine(i + " ");
+            }
+            Console.WriteLine();
+            Console.ReadKey();
         }
+
     }
 }
