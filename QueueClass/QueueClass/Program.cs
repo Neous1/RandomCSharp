@@ -71,7 +71,20 @@ namespace QueueClass
             string[] array2 = new string[numbers.Count * 2];
             numbers.CopyTo(array2, numbers.Count);
 
+            /*Create a second queue, using the constructor that accepts and 
+             * IEnuerable(Of T)             
+             */
+             Queue<string> queueCopy2 = new Queue<string>(array2);
+            Console.WriteLine("\nContents of the second copy , with duplicates and nulls:");
+            foreach (string number in queueCopy2)
+            {
+                Console.WriteLine(number);
+            }
 
+            Console.WriteLine("\nqueueCopy.Contains(\"four\")={0}", queueCopy.Contains("four"));
+            Console.WriteLine("\nqueueCopy.Clear()");
+            queueCopy.Clear();
+            Console.WriteLine("\nqueueCopy.Count = {0}", queueCopy.Count);
         }
     }
 }
