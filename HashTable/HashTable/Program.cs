@@ -31,7 +31,14 @@ namespace HashTable
                 ht.Add("008", "Nuha Ali");
             }
 
+            //Get a collection of hte keys
+            ICollection key = ht.Keys;
 
+            foreach (string k in key)
+            {
+                Console.WriteLine(k + ": " + ht[k]);
+            }
+            Console.ReadKey();
 
         }
     }
