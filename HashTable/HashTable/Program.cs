@@ -11,6 +11,7 @@ namespace HashTable
     {
         static void Main(string[] args)
         {
+            //create a hashtable and add key, value elements
             Hashtable ht = new Hashtable();
 
             ht.Add("001", "Zara Ali");
@@ -20,6 +21,15 @@ namespace HashTable
             ht.Add("005", "M. Amlan");
             ht.Add("006", "M. Arif");
             ht.Add("007", "Ritesh Saika");
+
+            if (ht.ContainsValue("Nuha Ali"))
+            {
+                Console.WriteLine("This student name is already in the list");
+            }
+            else
+            {
+                ht.Add("008", "Nuha Ali");
+            }
 
 
 
