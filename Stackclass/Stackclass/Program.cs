@@ -49,6 +49,18 @@ namespace Stackclass
             {
                 Console.WriteLine(c + " ");
             }
+            Console.WriteLine();
+
+            Console.WriteLine("Removing values ");
+            st.Pop();
+            st.Pop();
+            st.Pop();
+
+            Console.WriteLine("Current stack: ");
+            foreach (char c in st)
+            {
+                Console.WriteLine(c + " ");
+            }
         }
     }
 }
