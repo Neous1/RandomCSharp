@@ -43,6 +43,13 @@ namespace Stackclass
             st.Push('M');
             st.Push('G');
             st.Push('w');
+
+            Console.WriteLine("Current Stack : ");
+            foreach (char c in st)
+            {
+                Console.WriteLine(c + " ");
+            }
         }
     }
 }
+
