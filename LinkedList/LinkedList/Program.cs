@@ -13,7 +13,24 @@ namespace LinkedList
         }
     }
 
- 
+    public class SinglyLinkedList
+    {
+        private Node first;
+
+        public bool isEmpty()
+        {
+            return (first == null);
+        }
+
+        public void insertFirst(int data)
+        {
+            Node newNode = new Node();
+            newNode.data = data;
+            newNode.next = first;
+            first = newNode;
+        }
+
+    }
     //create node class
     public class Node
     {
