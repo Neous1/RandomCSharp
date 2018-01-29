@@ -27,6 +27,10 @@ namespace MSDNLinkedLIst
             sentence.AddLast(mark1);
             Display(sentence, "Test 2: Move first node to be last node:");
 
+            //Change ghe last node to be the first node.
+            sentence.RemoveFirst();
+            sentence.AddLast("yesterday");
+            Display(sentence, "Test 3: Chage the last node to 'yesterday':");
         }
 
         private static void Display(LinkedList<string> words, string test)
