@@ -37,6 +37,23 @@ namespace LinkedList
             return temp;
         }
 
+        public void displayList()
+        {
+            Console.WriteLine("LIst(first -- last)");
+            Node current = _first;
+            while (current != null)
+            {
+                current.displayNode();
+                current = current.next;
+            }
+            Console.WriteLine();
+        }
+
+        public void insertLastNode()
+        {
+            
+        }
+
     }
     //create node class
     public class Node
@@ -44,7 +61,7 @@ namespace LinkedList
         public int data;
         public Node next;
 
-        public void displayNOde()
+        public void displayNode()
         {
             Console.WriteLine("<" + data + ">");
         }
