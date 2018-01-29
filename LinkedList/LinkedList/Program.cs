@@ -15,19 +15,26 @@ namespace LinkedList
 
     public class SinglyLinkedList
     {
-        private Node first;
+        private Node _first;
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
-            return (first == null);
+            return (_first == null);
         }
 
-        public void insertFirst(int data)
+        public void InsertFirst(int data)
         {
             Node newNode = new Node();
             newNode.data = data;
-            newNode.next = first;
-            first = newNode;
+            newNode.next = _first;
+            _first = newNode;
+        }
+
+        public Node DeleteFirst()
+        {
+            Node temp = _first;
+            _first = _first.next;
+            return temp;
         }
 
     }
