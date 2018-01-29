@@ -49,9 +49,18 @@ namespace LinkedList
             Console.WriteLine();
         }
 
-        public void insertLastNode()
+        public void insertLastNode(int data
+            )
         {
-            
+            Node current = _first;
+            while (current.next != null)
+            {
+                current = current.next;
+            }
+
+            Node newNode = new Node();
+            newNode.data = data;
+            current.next = newNode;
         }
 
     }
