@@ -10,6 +10,12 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
+            SinglyLinkedList myList = new SinglyLinkedList();
+            myList.InsertFirst(100);
+            myList.InsertFirst(50);
+            myList.InsertFirst(99);
+            myList.InsertFirst(88);
+            myList.displayList();
         }
     }
 
