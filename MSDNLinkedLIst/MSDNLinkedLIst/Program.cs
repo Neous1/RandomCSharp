@@ -21,16 +21,21 @@ namespace MSDNLinkedLIst
             Display(sentence, "Test 1: Add 'today' to beginning of the list:");
 
             //Move the first node to be the last node.
-
             LinkedListNode<string> mark1 = sentence.First;
             sentence.RemoveFirst();
             sentence.AddLast(mark1);
             Display(sentence, "Test 2: Move first node to be last node:");
 
             //Change ghe last node to be the first node.
-            sentence.RemoveFirst();
+            sentence.RemoveLast();
             sentence.AddLast("yesterday");
-            Display(sentence, "Test 3: Chage the last node to 'yesterday':");
+            Display(sentence, "Test 3: Change the last node to 'yesterday':");
+
+            //Move the last node to be the first node.
+            mark1 = sentence.Last;
+            sentence.RemoveLast();
+            sentence.AddFirst(mark1);
+            Display(sentence, "Test 4: Move last node to be first node");
         }
 
         private static void Display(LinkedList<string> words, string test)
