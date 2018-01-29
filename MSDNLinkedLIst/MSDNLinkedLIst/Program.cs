@@ -13,7 +13,20 @@ namespace MSDNLinkedLIst
             //Create the link list
             string[] words = {"the", "fox", "jumped", "over", "the", "dog"};
             LinkedList<String> sentence = new LinkedList<string>(words);
-           
+            Display(sentence, "The linked list values:");
+            Console.WriteLine("sentence.Contains('jumped') = {0}", sentence.Contains("jumped"));
+
+        }
+
+        private static void Display(LinkedList<string> words, string test)
+        {
+            Console.WriteLine(test);
+            foreach (string word in words)
+            {
+                Console.WriteLine(word + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
