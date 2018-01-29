@@ -15,6 +15,7 @@ namespace LinkedList
             myList.InsertFirst(50);
             myList.InsertFirst(99);
             myList.InsertFirst(88);
+            myList.insertLast(999000);
             myList.displayList();
         }
     }
@@ -55,7 +56,7 @@ namespace LinkedList
             Console.WriteLine();
         }
 
-        public void insertLastNode(int data
+        public void insertLast(int data
             )
         {
             Node current = _first;
