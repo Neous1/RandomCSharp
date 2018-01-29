@@ -17,6 +17,10 @@ namespace LinkedList
             myList.InsertFirst(88);
             myList.insertLast(999000);
             myList.displayList();
+
+            myList.DeleteFirst();
+            myList.displayList();
+
         }
     }
 
