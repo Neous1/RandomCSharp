@@ -36,6 +36,16 @@ namespace MSDNLinkedLIst
             sentence.RemoveLast();
             sentence.AddFirst(mark1);
             Display(sentence, "Test 4: Move last node to be first node");
+
+            //Indicate, by using parentheisis  the last occurence of 'the'
+            sentence.RemoveFirst();
+            LinkedListNode<string> current = sentence.FindLast("the");
+            IndicateNode(current, "Test 5: Indicate last occurence of 'the': ");
+            
+
+
+
+
         }
 
         private static void Display(LinkedList<string> words, string test)
@@ -46,6 +56,34 @@ namespace MSDNLinkedLIst
                 Console.WriteLine(word + " ");
             }
             Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        private static void IndicateNode(LinkedListNode<string> node, string test)
+        {
+            Console.WriteLine(test);
+            if (node.List == null)
+            {
+                Console.WriteLine("Node '{0}' is not in the list. \n");
+            }
+
+            StringBuilder result = new StringBuilder("(" + node.Value +")");
+            LinkedListNode<string> nodeP = node.Previous;
+
+            while (nodeP != null)
+            {
+                result.Insert(0, nodeP.Value + " ");
+                nodeP = nodeP.Previous;
+            }
+
+            node = node.Next;
+            while (node != null)
+            {
+                result.Append(" " + node.Value);
+                node = node.Next;
+            }
+
+            Console.WriteLine(result);
             Console.WriteLine();
         }
     }
