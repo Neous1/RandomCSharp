@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,13 @@ namespace MSDNLinkedLIst
             sentence.RemoveFirst();
             LinkedListNode<string> current = sentence.FindLast("the");
             IndicateNode(current, "Test 5: Indicate last occurence of 'the': ");
-            
+
+            //Add 'lazy' and 'old' after 'the' (the linklistNode name current).
+            Debug.Assert(current != null, "current != null");
+            sentence.AddAfter(current, "old");
+            sentence.AddAfter(current, "lazy");
+            IndicateNode(current, "Test 6: Add 'lazy' and 'old' after 'the':");
+
 
 
 
