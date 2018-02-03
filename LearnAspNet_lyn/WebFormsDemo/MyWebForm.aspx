@@ -21,7 +21,7 @@
 
         <asp:FileUpload ID="FileUpload1" runat="server" />
 
-        <asp:Button ID="Button1" runat="server" Text="Save" />
+        <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_OnClick"/>
         <asp:Literal ID="Feedback" runat="server"></asp:Literal>
     </div>
     </form>
