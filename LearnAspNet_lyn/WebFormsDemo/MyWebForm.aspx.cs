@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +9,14 @@ public partial class MyWebForm : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (IsPostBack)
+        {
+            string name = TextBox1.Text;
+            string type = DropDownList1.SelectedValue;
+            string filename = FileUpload1.FileName;
+            //to do : record in DB
+            FileUpload1.SaveAs(Server.MapPath("~/Content/" + filename));
+            Feedback.Text = "Submission saved.";
+        }
     }
 }
