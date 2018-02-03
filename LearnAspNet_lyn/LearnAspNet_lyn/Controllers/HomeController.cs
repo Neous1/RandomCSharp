@@ -26,5 +26,12 @@ namespace LearnAspNet_lyn.Controllers
 
             return View();
         }
+
+        public ActionResult HelloWorld()
+        {
+            ViewBag.Message = "Hello World!.";
+
+            return View();
+        }
     }
 }
