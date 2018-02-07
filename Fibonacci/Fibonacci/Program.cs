@@ -10,32 +10,30 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            Fibonacci_Iterative(9);
+            FindFib(9);
         }
 
-        public static int Fibonacci_Iterative(int len)
+        public static int FindFib(int len)
 
         {
+            
+            int temp0 = 0, temp1 = 1, res = 0; 
 
-            int a = 0, b = 1, c = 0;
-
-            Console.Write("{0} {1}", a, b);
+            Console.Write("{0} {1}",temp0, temp1);
 
 
 
             for (int i = 2; i < len; i++)
 
             {
+                res = temp0 + temp1;
 
-                c = a + b;
+                Console.Write(" {0}", res);
+                
+                //shift indeces forward to capture new values
 
-                Console.Write(" {0}", c);
-                Console.WriteLine();
-
-                a = b;
-
-                b = c;
-
+                temp0 = temp1;
+                temp1 = res;
             }
 
             return len;
