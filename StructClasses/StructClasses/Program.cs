@@ -10,6 +10,12 @@ namespace StructClasses
     {
         static void Main(string[] args)
         {
+            // create a reactangle struct
+            Rectangle rect1;
+            rect1.length = 200;
+            rect1.width = 50;
+            Console.WriteLine("Area of rect1: {0}", rect1.Area());
+
         }
 
         struct Rectangle
