@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <p>Hello, World @Server.MachineName!</p>
+    @*loops*@
+        @{
+            var fruits = new List<string> { "apples", "oranges", "bananas"};   
+            <p>Favorite fruits:</p>
+            <ul>
+                @foreach (string f in fruits)
+                {
+                    <li>@f</li>
+                }
+            </ul>
+        }
+    </body>
+</html>
