@@ -27,7 +27,7 @@ namespace Classes
 
         public void MakeSound()
         {
-            Console.WriteLine("{0} says{1}", name, sound);
+            Console.WriteLine("{0} says {1}", name, sound);
         }
 
          static int numOfAnimals = 0;
@@ -41,6 +41,13 @@ namespace Classes
     {
         static void Main(string[] args)
         {
+            Animal fox = new Animal()
+            {
+                name = "Red",
+                sound = "Raaw"
+            };
+            fox.MakeSound();
+            Console.WriteLine("# of Animals: {0}", Animal.GetNumAnimals());
         }
     }
 }
