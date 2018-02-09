@@ -17,7 +17,7 @@ namespace StructClasses
             Console.WriteLine("Area of rect1: {0}", rect1.Area());
 
             Rectangle rect2 = new Rectangle(100, 40);
-            //
+            //create a rectangle using constructor
             rect2 = rect1;
             rect1.length = 33;
 
